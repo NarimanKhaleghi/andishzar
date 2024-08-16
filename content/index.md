@@ -1,5 +1,5 @@
 ---
-title: صفحه اصلی
+title: خانه
 description: 
 aliases: 
 date: 
