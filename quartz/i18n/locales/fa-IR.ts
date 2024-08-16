@@ -33,7 +33,7 @@ export default {
       title: "مطالب",
     },
     footer: {
-      createdWith: "ساخته شده با",
+      createdWith: "Made by",
     },
     graph: {
       title: "نمای گراف",

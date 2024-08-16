@@ -14,8 +14,9 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
+          <a href="https://narimankhaleghi.github.io/andishzar/">Andishzar </a>
           {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          <a href="https://narimankhaleghi.github.io/andishzar/0.-%D9%86%D9%82%D8%B7%D9%87-%D8%B4%D8%B1%D9%88%D8%B9%F0%9F%98%84/1.-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%AF%D9%85">Nariman Khaleghi </a> © {year}
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
