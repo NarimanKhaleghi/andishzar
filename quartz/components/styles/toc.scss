@@ -1,7 +1,7 @@
 button#toc {
+  text-align: center;
   background-color: transparent;
   border: none;
-  text-align: left;
   cursor: pointer;
   padding: 0;
   color: var(--dark);
@@ -9,8 +9,8 @@ button#toc {
   align-items: center;
 
   & h3 {
-    font-size: 1rem;
-    display: inline-block;
+    font-size: 18px;
+    font-weight: 900; /* Black */
     margin: 0;
   }
 
@@ -21,11 +21,19 @@ button#toc {
   }
 
   &.collapsed .fold {
-    transform: rotateZ(-90deg);
+    transform: rotateZ(90deg);
   }
 }
 
 #toc-content {
+  border-radius: 10px;
+  border: 1px solid var(--lightgray);
+  box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600; /* Black */
   list-style: none;
   overflow: hidden;
   max-height: none;

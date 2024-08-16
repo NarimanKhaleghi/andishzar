@@ -2,18 +2,20 @@
 
 .graph {
   & > h3 {
-    font-size: 1rem;
+    font-size: 18px;
+    font-weight: 900; /* Black */
     margin: 0;
   }
 
   & > .graph-outer {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
-    height: 250px;
-    margin: 0.5em 0;
+    padding: 10px;
     position: relative;
     overflow: hidden;
+    height: 250px;
+    margin: 0.5em 0;
 
     & > #global-graph-icon {
       color: var(--dark);

@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🌱اندیش‌زار",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "fa-IR",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
@@ -28,26 +28,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#fdfbf0",           // پس‌زمینه زرد بسیار ملایم
+          lightgray: "#e6e8d4",       // خاکستری مایل به سبز روشن
+          gray: "#a0a895",            // خاکستری مایل به سبز متوسط
+          darkgray: "#5a6650",        // خاکستری مایل به سبز تیره
+          dark: "#2c3327",            // سبز تیره
+          secondary: "#3a7d44",       // سبز زمردی (برای قدرت و طراوت)
+          tertiary: "#f9c22e",        // زرد طلایی (برای گرمی و صمیمیت)
+          highlight: "rgba(122, 191, 133, 0.2)", // سایه سبز روشن
+          textHighlight: "#ffd956", // هایلایت متن زرد
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1c1e17",           // پس‌زمینه تیره با ته‌رنگ سبز
+          lightgray: "#2f3329",       // خاکستری تیره مایل به سبز
+          gray: "#5a6650",            // خاکستری متوسط مایل به سبز
+          darkgray: "#b8c0ac",        // خاکستری روشن مایل به سبز
+          dark: "#e6e8d4",            // نزدیک به سفید با ته‌رنگ سبز
+          secondary: "#5fa463",       // سبز روشن‌تر برای دارک مود
+          tertiary: "#f9c22e",        // همان زرد طلایی
+          highlight: "rgba(122, 191, 133, 0.15)", // سایه سبز تیره‌تر
+          textHighlight: "#ffd956", // هایلایت متن زرد شفاف‌تر
         },
       },
     },
