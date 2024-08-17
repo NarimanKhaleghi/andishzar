@@ -22,7 +22,7 @@ export default {
       quote: "نقل قول",
     },
     backlinks: {
-      title: "بک‌لینک‌ها",
+      title: "🔗بک‌لینک‌ها",
       noBacklinksFound: "بدون بک‌لینک",
     },
     themeToggle: {
@@ -30,13 +30,13 @@ export default {
       darkMode: "حالت تاریک",
     },
     explorer: {
-      title: "فهرست نوشته‌ها",
+      title: "📋 فهرست مطالب",
     },
     footer: {
       createdWith: "Made by",
     },
     graph: {
-      title: "نمای گراف",
+      title: "🕸️ نمای گراف",
     },
     recentNotes: {
       title: "یادداشت‌های اخیر",
@@ -51,7 +51,7 @@ export default {
       searchBarPlaceholder: "جستجو کن!",
     },
     tableOfContents: {
-      title: "فهرست این نوشته",
+      title: "📖 فهرست نوشته",
     },
     contentMeta: {
       readingTime: ({ minutes }) => `زمان تقریبی مطالعه: ${minutes} دقیقه`,
