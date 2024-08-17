@@ -8,11 +8,6 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "Telegram": "https://t.me/NarimanKhaleghi",
-      "Twitter": "https://x.com/narimankhaleghi?t=Jz-kvII7gro06syTZfBsrg&s=09",
-      "Instagram": "https://www.instagram.com/narimankhaleghi?igsh=MWpmYmNleXE1M21qbg==",
-      "LinkedIn": "https://www.linkedin.com/in/nariman-khaleghi-4867521a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "GitHub": "https://github.com/NarimanKhaleghi/",
     },
   }),
 }
@@ -21,8 +16,6 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
-    Component.Spacer(),
-    Component.Spacer(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),

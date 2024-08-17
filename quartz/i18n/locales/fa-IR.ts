@@ -30,7 +30,7 @@ export default {
       darkMode: "حالت تاریک",
     },
     explorer: {
-      title: "مطالب",
+      title: "فهرست نوشته‌ها",
     },
     footer: {
       createdWith: "Made by",
@@ -48,10 +48,10 @@ export default {
     },
     search: {
       title: "جستجو",
-      searchBarPlaceholder: "مطلبی را جستجو کنید",
+      searchBarPlaceholder: "جستجو کن!",
     },
     tableOfContents: {
-      title: "فهرست",
+      title: "فهرست این نوشته",
     },
     contentMeta: {
       readingTime: ({ minutes }) => `زمان تقریبی مطالعه: ${minutes} دقیقه`,
