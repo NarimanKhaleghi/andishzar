@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "fa-IR",
-    baseUrl: "narimankhaleghi.github.io/andishzar",
+    baseUrl: "andishzar.ir",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
