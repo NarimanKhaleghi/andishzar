@@ -28,7 +28,7 @@ function boolToStringBool(b: boolean): string {
 export default ((opts: Options) => {
   const Comments: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     // Check if the current page is index, 404, or tags
-    const isExcludedPage = fileData.slug === "index" || fileData.slug === "404" || fileData.slug.startsWith("tags/")
+    const isExcludedPage = fileData.slug === "index" || fileData.slug === "404" || fileData.slug.startsWith("tags/") || fileData.slug.startsWith("6.-جنگل%E2%80%8Cها🏞%EF%B8%8F/") || fileData.slug.startsWith("5.-درختان🌳/") || fileData.slug.startsWith("4.-درختچه%E2%80%8Cها🌲/") || fileData.slug.startsWith("0.-نقطه-شروع😄/") || fileData.slug.startsWith("1.-بذرها🌱/") || fileData.slug.startsWith("2.-نهال%E2%80%8Cها🌿/") || fileData.slug.startsWith("3.-گیاهان🌾/") 
     
     if (isExcludedPage) {
       return null // Don't render comments on excluded pages
