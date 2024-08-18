@@ -11,11 +11,10 @@
     border-radius: 10px;
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
-    padding: 10px;
     position: relative;
     overflow: hidden;
     height: 250px;
-    margin: 0.5em 0;
+    margin-top: -15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     & > #global-graph-icon {

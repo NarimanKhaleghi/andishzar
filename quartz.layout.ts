@@ -5,7 +5,24 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.PageTitle(), Component.Spacer(), Component.Search(), Component.Darkmode()],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'NarimanKhaleghi/andishzar',
+        repoId: 'R_kgDOMkMo2g',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOMkMo2s4ChvvM',
+        mapping: 'pathname',
+        strict: true,
+        reactionsEnabled: true,
+        emitMetadata: true,
+        inputPosition: 'top',
+        theme: 'transparent_dark',
+        loading: 'lazy'
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
     },
@@ -22,8 +39,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.Backlinks()),
+    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
     Component.Graph(),

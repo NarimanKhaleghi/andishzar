@@ -13,7 +13,11 @@ type Options = {
     mapping?: "url" | "title" | "og:title" | "specific" | "number" | "pathname"
     strict?: boolean
     reactionsEnabled?: boolean
+    emitMetadata?: boolean
     inputPosition?: "top" | "bottom"
+    theme?: string
+    lang?: string
+    loading?: "lazy" | "eager"
   }
 }
 
@@ -22,7 +26,14 @@ function boolToStringBool(b: boolean): string {
 }
 
 export default ((opts: Options) => {
-  const Comments: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Comments: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
+    // Check if the current page is index, 404, or tags
+    const isExcludedPage = fileData.slug === "index" || fileData.slug === "404" || fileData.slug.startsWith("tags/")
+    
+    if (isExcludedPage) {
+      return null // Don't render comments on excluded pages
+    }
+
     return (
       <div
         class={classNames(displayClass, "giscus")}
@@ -30,10 +41,14 @@ export default ((opts: Options) => {
         data-repo-id={opts.options.repoId}
         data-category={opts.options.category}
         data-category-id={opts.options.categoryId}
-        data-mapping={opts.options.mapping ?? "url"}
+        data-mapping={opts.options.mapping ?? "pathname"}
         data-strict={boolToStringBool(opts.options.strict ?? true)}
         data-reactions-enabled={boolToStringBool(opts.options.reactionsEnabled ?? true)}
-        data-input-position={opts.options.inputPosition ?? "bottom"}
+        data-emit-metadata={boolToStringBool(opts.options.emitMetadata ?? true)}
+        data-input-position={opts.options.inputPosition ?? "top"}
+        data-theme={opts.options.theme ?? "noborder_light"}
+        data-loading={opts.options.loading ?? "lazy"}
+        crossorigin="anonymous"
       ></div>
     )
   }

@@ -3,7 +3,19 @@
 // put your custom CSS here!
 
 
-  
+.giscus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid var(--lightgray);
+  box-sizing: border-box;
+  padding: 10px 10px 0 10px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  overflow: hidden;
+}
+
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -48,9 +60,6 @@
 .icon-github:hover {
   fill: #181717;
 }
-
-
-
 
 header {
     border-radius: 10px;
@@ -110,11 +119,17 @@ h2, h3, h4, h5, h6 {
     padding: 0;
     line-height: normal;
 }
- 
+
+.graph{
+  margin-top: -20px;
+}
+
+
 button#explorer .fold {
-    opacity: .8;
+    opacity: 0.8;
     margin-left: 0 !important;
-    margin-right: 0.5rem !important;
+    margin-top: 7px;
+    margin-right: 10px !important;
     transition: transform .3s;
 }
  
@@ -124,6 +139,7 @@ button#explorer .fold {
 }
  
 .tags {
+  margin-bottom: 40px;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -133,10 +149,6 @@ button#explorer .fold {
     margin-left: 5px !important;
 }
  
-#explorer-content ul {
-    padding-right: .7rem !important;
-    padding-left: 0px !important;
-}
  
 #toc-content .depth-1 {
     padding: 0px !important;
