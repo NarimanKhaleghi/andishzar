@@ -4,7 +4,7 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.PageTitle(), Component.Spacer(), Component.Search(), Component.Darkmode()],
+  header: [Component.Darkmode(), Component.Spacer(), Component.PageTitle(), Component.Spacer(), Component.Search()],
   afterBody: [
     Component.Comments({
       provider: 'giscus',
@@ -36,16 +36,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.MobileOnly(Component.TableOfContents()),
+    Component.TableOfContents(),
   ],
   left: [
-    Component.DesktopOnly(Component.Backlinks()),
-    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
-    Component.Graph(),
-    Component.MobileOnly(Component.Backlinks()),
     Component.Explorer(),
+    Component.RecentNotes(),
+    Component.Backlinks(),
+    Component.Graph(),
   ],
 }
 
