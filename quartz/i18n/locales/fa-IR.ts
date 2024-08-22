@@ -63,8 +63,8 @@ export default {
       lastFewNotes: ({ count }) => `${count} یادداشت اخیر`,
     },
     error: {
-      title: "یافت نشد",
-      notFound: "این صفحه یا خصوصی است یا وجود ندارد",
+      title: "این صفحه وجود نداره!",
+      notFound: "Error 404! در این آدرس چنین صفحه‌ای موجود نیست.",
       home: "بازگشت به صفحه اصلی",
     },
     folderContent: {
