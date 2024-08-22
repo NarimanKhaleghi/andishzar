@@ -22,6 +22,7 @@ export const sharedPageComponents: SharedLayout = {
         loading: 'lazy'
       }
     }),
+    Component.Explorer(),
   ],
   footer: Component.Footer({
     links: {
@@ -41,10 +42,8 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
   ],
   right: [
-    Component.Explorer(),
-    Component.RecentNotes(),
-    Component.Backlinks(),
     Component.Graph(),
+    Component.Backlinks(),
   ],
 }
 

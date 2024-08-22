@@ -15,13 +15,13 @@
     overflow: hidden;
     height: 250px;
     margin-top: -15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 1px var(--gray);
 
     & > #global-graph-icon {
       color: var(--dark);
-      opacity: 0.5;
-      width: 18px;
-      height: 18px;
+      opacity: 1;
+      width: 30px;
+      height: 30px;
       position: absolute;
       padding: 0.2rem;
       margin: 0.3rem;
@@ -42,7 +42,7 @@
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     backdrop-filter: blur(4px);
     display: none;

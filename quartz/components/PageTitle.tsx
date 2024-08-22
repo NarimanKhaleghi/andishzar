@@ -18,7 +18,7 @@ PageTitle.css = `
   text-align: center;
   font-size: 20px;
   font-family: 'Vazirmatn', sans-serif;
-  font-weight: 900; /* Black */
+  font-weight: 900;
   margin: 0;
 }
 `

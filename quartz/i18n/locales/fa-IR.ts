@@ -47,7 +47,7 @@ export default {
       linkToOriginal: "پیوند به اصلی",
     },
     search: {
-      title: "جستجو",
+      title: "",
       searchBarPlaceholder: "جستجو کن!",
     },
     tableOfContents: {

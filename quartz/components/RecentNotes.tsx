@@ -18,7 +18,7 @@ interface Options {
 }
 
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
-  limit: 5,
+  limit: 1,
   linkToMore: false,
   showTags: true,
   filter: () => true,
@@ -47,11 +47,11 @@ export default ((userOpts?: Partial<Options>) => {
               <li class="recent-li">
                 <div class="section">
                   <div class="desc">
-                    <h3>
+                    <h6>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                         {title}
                       </a>
-                    </h3>
+                    </h6>
                   </div>
                   {page.dates && (
                     <p class="meta">
