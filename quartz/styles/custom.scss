@@ -3,6 +3,14 @@
   
 // put your custom CSS here!
 
+#quartz-body {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: -25px 0 0 0;
+}
+
 #quartz-body > div.right.sidebar > div.backlinks > ul {
   padding: 1rem 1rem 0 0;
 }
@@ -116,6 +124,7 @@ header {
   top: 0;
   right: 0;
   margin-top: 0px;
+  margin-bottom: 0;
   border-radius: 0px 0px 10px 10px;
   border: 1px solid var(--lightgray);
   box-sizing: border-box;
@@ -124,7 +133,7 @@ header {
   display: flex;
   width: 100%;
   background-color: var(--light);
-  overflow: auto;
+  height: 30px;
   box-shadow: 0px 0px 10px 1px var(--gray);
   z-index: 1;
 }
