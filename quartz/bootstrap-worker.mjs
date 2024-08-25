@@ -1,7 +1,2 @@
 #!/usr/bin/env node
-import workerpool from "workerpool"
-const cacheFile = "./.quartz-cache/transpiled-worker.mjs"
-const { parseFiles } = await import(cacheFile)
-workerpool.worker({
-  parseFiles,
-})
+import r from"workerpool";let cacheFile="./.quartz-cache/transpiled-worker.mjs",{parseFiles:e}=await import("./.quartz-cache/transpiled-worker.mjs");r.worker({parseFiles:e});

@@ -52,7 +52,7 @@ document.addEventListener("nav", () => {
   giscusScript.setAttribute("data-category-id", "DIC_kwDOMkMo2s4ChvvM")
   giscusScript.setAttribute("data-mapping", "pathname")
   giscusScript.setAttribute("data-strict", "1")
-  giscusScript.setAttribute("data-reactions-enabled", "1")
+  giscusScript.setAttribute("data-reactions-enabled", "0")
   giscusScript.setAttribute("data-emit-metadata", "1")
   giscusScript.setAttribute("data-input-position", "top")
   giscusScript.setAttribute("data-lang", "fa")

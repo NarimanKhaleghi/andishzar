@@ -15,7 +15,7 @@ export const sharedPageComponents: SharedLayout = {
         categoryId: 'DIC_kwDOMkMo2s4ChvvM',
         mapping: 'pathname',
         strict: true,
-        reactionsEnabled: true,
+        reactionsEnabled: false,
         emitMetadata: true,
         inputPosition: 'top',
         theme: 'transparent_dark',
@@ -24,7 +24,8 @@ export const sharedPageComponents: SharedLayout = {
     }),
     Component.Explorer(),
   ],
-  footer: Component.Footer({
+  footer:
+    Component.Footer({
     links: {
     },
   }),
@@ -44,6 +45,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.Backlinks(),
+    Component.RecentNotes(),
   ],
 }
 
@@ -54,15 +56,13 @@ export const defaultListPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.MobileOnly(Component.TableOfContents()),
+    Component.TableOfContents(),
   ],
   left: [
-    Component.DesktopOnly(Component.Backlinks()),
-    Component.DesktopOnly(Component.TableOfContents())
   ],
   right: [
     Component.Graph(),
-    Component.MobileOnly(Component.Backlinks()),
-    Component.Explorer(),
+    Component.Backlinks(),
+    Component.RecentNotes(),
   ],
 }

@@ -1,15 +1,1 @@
-.content-meta {
-  text-align: center;
-  margin-top: 0;
-  color: var(--gray);
-
-  &[show-comma="true"] {
-    > span:not(:last-child) {
-      margin-right: 8px;
-
-      &::after {
-        content: ",";
-      }
-    }
-  }
-}
+.content-meta {text-align: center;margin-top: 0;color: var(--gray);&[show-comma="true"] {> span:not(:last-child) {margin-right: 8px;&::after {content: ",";}}}}

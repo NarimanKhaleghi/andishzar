@@ -1,5 +1,5 @@
 ---
-title: اندیشزار
+title: صفحه اصلی
 description: 
 aliases: 
 date: 

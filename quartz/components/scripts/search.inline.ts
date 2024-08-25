@@ -342,8 +342,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     removeAllChildren(results)
     if (finalResults.length === 0) {
       results.innerHTML = `<a class="result-card no-match">
-          <h3>No results.</h3>
-          <p>Try another search term?</p>
+          <h3>برای این جستجو نتیجه‌ای یافت نشد</h3>
+          <p>دوباره جستجو کنید!</p>
       </a>`
     } else {
       results.append(...finalResults.map(resultToHTML))
