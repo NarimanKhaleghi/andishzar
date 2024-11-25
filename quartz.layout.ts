@@ -45,7 +45,6 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.Backlinks(),
-    Component.RecentNotes(),
   ],
 }
 
@@ -63,6 +62,5 @@ export const defaultListPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.Backlinks(),
-    Component.RecentNotes(),
   ],
 }
